@@ -84,6 +84,7 @@
             }
         };
 
+        const _segmentit = segmentit.useDefault(new segmentit.Segment());
         lunr.zh.tokenizer = function(obj) {
             if (!arguments.length || obj == null || obj == undefined) return [];
             if (Array.isArray(obj))
@@ -97,7 +98,6 @@
                 .toLowerCase();
             var tokens = [];
 
-            const _segmentit = segmentit.useDefault(new segmentit.Segment());
             const result = _segmentit.doSegment(str);
             console.log(result);
             for (var i = 0; i < result.length; i++) {
