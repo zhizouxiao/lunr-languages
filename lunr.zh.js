@@ -34,13 +34,13 @@
         // Browser globals (root is window)
         factory()(root.lunr);
     }
-})(this, function(Segment) {
+})(this, function(segmentit) {
     /**
      * Just return a value to define the module export.
      * This example returns an object, but the module
      * can return a function as the exported value.
      */
-    return function(lunr, nodejiebaDictJson) {
+    return function(lunr) {
         /* throw error if lunr is not yet included */
         if ('undefined' === typeof lunr) {
             throw new Error('Lunr is not present. Please include / require Lunr before this script.');
@@ -91,26 +91,19 @@
                     return isLunr2 ? new lunr.Token(t.toLowerCase()) : t.toLowerCase();
                 });
 
-            nodejiebaDictJson && nodejieba.load(nodejiebaDictJson);
-
             var str = obj
                 .toString()
                 .trim()
                 .toLowerCase();
             var tokens = [];
-            //import { Segment, useDefault } from 'segmentit';
 
-            const segmentit = useDefault(new Segment());
-            const result = segmentit.doSegment(str);
+            const _segmentit = segmentit.useDefault(new segmentit.Segment());
+            const result = _segmentit.doSegment(str);
             console.log(result);
             for (var i = 0; i < result.length; i++) {
                 var seg = result[i];
-                tokens = tokens.concat(seg.split(' '));
+                tokens = tokens.concat(seg.w);
             }
-
-            //nodejieba.cut(str, true).forEach(function (seg) {
-            //tokens = tokens.concat(seg.split(' '))
-            //})
 
             tokens = tokens.filter(function(token) {
                 return !!token;
