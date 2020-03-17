@@ -20,7 +20,7 @@
 
 "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.7":
   version "7.8.7"
-  resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.8.7.tgz?cache=0&sync_timestamp=1583373863450&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.8.7.tgz#8fefce9802db54881ba59f90bb28719b4996324d"
+  resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.8.7.tgz?cache=0&sync_timestamp=1583400922119&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.8.7.tgz#8fefce9802db54881ba59f90bb28719b4996324d"
   integrity sha1-j+/OmALbVIgbpZ+Quyhxm0mWMk0=
   dependencies:
     regenerator-runtime "^0.13.4"
@@ -765,9 +765,10 @@ right-align@^0.1.1:
   dependencies:
     align-text "^0.1.1"
 
-"segmentit@https://github.com/zhizouxiao/segmentit/tarball/master":
+segmentit@^2.0.3:
   version "2.0.3"
-  resolved "https://github.com/zhizouxiao/segmentit/tarball/master#e59bdddc796923aa5da1b7312426692d24dcc860"
+  resolved "https://registry.npm.taobao.org/segmentit/download/segmentit-2.0.3.tgz#799897667acbc518b27811acdb2a341a79c7973f"
+  integrity sha1-eZiXZnrLxRiyeBGs2yo0GnnHlz8=
   dependencies:
     preval.macro "^4.0.0"
 
@@ -937,7 +938,7 @@ yallist@^2.1.2:
 
 yaml@^1.7.2:
   version "1.8.2"
-  resolved "https://registry.npm.taobao.org/yaml/download/yaml-1.8.2.tgz#a29c03f578faafd57dcb27055f9a5d569cb0c3d9"
+  resolved "https://registry.npm.taobao.org/yaml/download/yaml-1.8.2.tgz?cache=0&sync_timestamp=1583906063337&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fyaml%2Fdownload%2Fyaml-1.8.2.tgz#a29c03f578faafd57dcb27055f9a5d569cb0c3d9"
   integrity sha1-opwD9Xj6r9V9yycFX5pdVpyww9k=
   dependencies:
     "@babel/runtime" "^7.8.7"
